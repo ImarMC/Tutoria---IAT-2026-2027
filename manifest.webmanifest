@@ -1,0 +1,17 @@
+{
+  "name": "Tutoria 2n Batxillerat · Institut Antoni Torroja",
+  "short_name": "Tutoria 2n",
+  "description": "Tasques de tutoria i orientació acadèmica de 2n de batxillerat. Institut Antoni Torroja, Cervera. Curs 2026-2027.",
+  "lang": "ca",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FBF7F1",
+  "theme_color": "#2E6B6B",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
