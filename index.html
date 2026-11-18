@@ -452,8 +452,8 @@ const PICS={
   vin:Object.keys(PICLAB).filter(k=>k.startsWith('vi')),
   tut:Object.keys(PICLAB).filter(k=>k.startsWith('tu'))
 };
-const imgTag=(k,alt)=>`<img src="img/${k}.webp" alt="${alt||''}" loading="lazy" decoding="async">`;
-const photo=(k,alt)=>`<img src="img/${k}.webp" alt="${alt||''}" decoding="async">`;
+const imgTag=(k,alt)=>`<img src="${k}.webp" alt="${alt||''}" loading="lazy" decoding="async">`;
+const photo=(k,alt)=>`<img src="${k}.webp" alt="${alt||''}" decoding="async">`;
 function monSVG(k){return `<img src="${MIMG[k]}" alt="${esc(MON[k].n)}" decoding="async">`}
 
 'use strict';
@@ -726,7 +726,7 @@ ROUTES.guia=function(){
       <p class="eyebrow">Per al tutor · Imar M. Cantero</p>
       <h1>Guia de la <span class="sq">sessió</span></h1>
       <p class="lead">Aquest apartat és només per al tutor.</p>
-      <figure class="homenatge"><img src="img/tutor.webp" alt="Il·lustració del tutor, Imar, caminant amb abric taronja i bufanda" decoding="async"><figcaption>Imar M. Cantero, en versió collage.<br>Sí, aquest és el nivell de la guia.</figcaption></figure>
+      <figure class="homenatge"><img src="tutor.webp" alt="Il·lustració del tutor, Imar, caminant amb abric taronja i bufanda" decoding="async"><figcaption>Imar M. Cantero, en versió collage.<br>Sí, aquest és el nivell de la guia.</figcaption></figure>
     </div><div class="art photo">${photo('vi24','')}</div></div>`;
   const show=async pw=>{const h=await decGuia(pw);app.innerHTML=head.replace('Aquest apartat és només per al tutor.','Una proposta per fer servir la tasca 1 a tutoria, i què fer amb els PDF quan arribin.')+h;};
   let saved=null;try{saved=sessionStorage.getItem('tg')}catch(e){}
